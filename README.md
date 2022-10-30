@@ -10,16 +10,16 @@ with any CID designating a wrapping folder containing some ethereum contracts in
 
 - Build and push docker image
 
-### `cd transpos && docker build . -t username/imagename:version && docker push username/imagename:version`
+#### `cd transpos && docker build . -t username/imagename:version && docker push username/imagename:version`
 
 - Send a request to the bacalhau network to run your container
 
-### `bacalhau docker run username/imagename:version --inputs CID`
+#### `bacalhau docker run username/imagename:version --inputs CID`
 
 - Get the outputs from ipfs
 
-### `bacalhau get JOBID`
+#### `bacalhau get JOBID`
 
 OR (if you have a node)
 
-### `ipfs get CID`
+#### `ipfs get CID`
